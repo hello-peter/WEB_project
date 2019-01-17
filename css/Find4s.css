@@ -1,0 +1,66 @@
+        html,
+        body,
+        #container {
+          width: 100%;
+          height: 100%;
+        }
+        *{
+        	padding: 0;
+        	margin: 0;
+        }
+    .login-bar{
+	float: right;
+}
+    ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+     padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+#title{
+	position: absolute;
+	font:"blackadder itc";
+	font-size:30px ;
+	padding-left:660px ;
+	color: dimgray;
+	}
+	#back-bar{
+	float: left;
+}
+
+#button{
+	width: 100%;
+	height: 60px;
+	background-color: #333;
+}
+#button-info{
+	text-align: center;
+	padding-top: 20px;
+	font-size:10px ;
+	color: #F9F9F9;
+}
+#amap_official_website{
+	text-decoration: none;
+	color: whitesmoke;
+	padding-left:670px ;
+	font-family:"wingdings 3" ;
+}
+#map_search{
+	padding-left: 640px;
+	color: whitesmoke;
+}
+#myPageTop{
+	background-color: #333;
+}

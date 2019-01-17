@@ -1,0 +1,153 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom: 0 !important;
+}
+
+
+.login-bar{
+	float: right;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+     padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+#grid-container{
+	display: grid;
+	grid-template-rows:auto auto  ;
+}
+.duo{
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.duo a{
+	 color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.duo a:hover{
+	background-color: #f1f1f1
+}
+#Links{
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+#frindly-link{
+	font-size: 20px;
+	display: block;
+    color: blanchedalmond;
+    text-align: center;
+     padding: 14px 16px;
+    text-decoration: none;
+}
+#button li a:hover{
+	font-size: 30px;
+    background-color: #111;
+}
+#fridly-link{
+	text-align: center;
+	font-size: 30px;
+	color: burlywood;
+	
+}
+
+.test{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	margin-left:auto ;
+	margin-right: auto;
+	display: block;
+}
+#title{
+	position: absolute;
+	font:"blackadder itc";
+	font-size:30px ;
+	padding-left:660px ;
+	color: dimgray;
+	}
+	#Button_Log{
+		padding-left:630px ;
+		background-color: #333;
+		padding-top:20px ;
+	}
+	
+	#find4S{
+		grid-row-start: 3;
+		grid-row-end: 4;
+		font-size:60px ;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		text-align: center;	
+	}
+.lunbo{
+	padding-left:600px ;
+}
+#myCarousel{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	background-color: #333;
+}
+#hondamobility{
+	width: auto;
+	height: auto;
+}
+.lun{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#vedio{
+	display: grid;
+	grid-template-row:auto auto;
+	grid-template-columns:auto auto ;
+}
+#environment{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+#Mobility{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+#community{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#safety{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#gif-car{
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 40px;
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>查找4S店</title>
+    <link href="css/Find4s.css" rel="stylesheet">
+     <link rel="icon" href="img/闪电麦昆.ico" type="image/x-icon" />
+</head>
+<body>
+	<div>
+	<ul id="head">
+		<li id="back-bar"><a href="index.html"><i class="fa fa-mail-reply"></i> 返回</a></li>
+  		<li class="login-bar"><a href="register.html" >注册</a></li>
+  		<li class="login-bar"><a href="Log_in.html">登陆</a></li>
+  		<li id="title">C a r</li>
+  </ul>	
+  </div>
+  <div id="myPageTop">
+    <table id="map_search">
+        <tr>
+            <td>
+                <label>请输入关键字：</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="tipinput"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="container"></div>
+<div id="button">
+	<p id="button-info" >本地图由高德地图提供技术支持</p>
+	<a href="https://ditu.amap.com/?amapexchange=%2F" id="amap_official_website">高德地图官网</a>
+</div>
+
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.11&key=18c324c6740bf033d9c883001ce4ba34"></script>
+<script type="text/javascript">
+    //初始化地图时，若center属性缺省，地图默认定位到用户所在城市的中心
+    var map = new AMap.Map("container", {
+        resizeEnable: true
+    });
+    //输入提示
+    var autoOptions = {
+        input: "tipinput"
+    };
+    var auto = new AMap.Autocomplete(autoOptions);
+    var placeSearch = new AMap.PlaceSearch({
+        map: map
+    });  //构造地点查询类
+    AMap.event.addListener(auto, "select", select);//注册监听，当选中某条记录时会触发
+    function select(e) {
+        placeSearch.setCity(e.poi.adcode);
+        placeSearch.search(e.poi.name);  //关键字查询查询
+    }
+</script>
+</body>
+</html>

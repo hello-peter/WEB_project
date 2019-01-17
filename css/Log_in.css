@@ -1,0 +1,55 @@
+div{
+	border-style:solid ;
+	border-width:1px ;
+	margin-left:580px ;
+	margin-right: 580px;
+	margin-top: 250px;
+	padding-left:10px ;
+	padding-top: 20px;
+	padding-bottom:20px ;
+}
+#vcodelog{
+	height: 40px;
+	margin-left: 15px;
+	opacity: 0.6;
+}
+#vcode{
+	width: 100px;
+}
+#LOG{
+	width: 200px;
+	height: 30px;
+	margin-left:20px ;
+	opacity: 0.6;
+	color: red;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+     padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.login-bar{
+	float: right;
+}
+#back-bar{
+	float: left;
+}
+
